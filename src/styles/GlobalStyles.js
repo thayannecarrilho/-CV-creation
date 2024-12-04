@@ -8,7 +8,7 @@ export default createGlobalStyle`
 };
 body {    
     text-align: center;
-    margin: 30px;
+    margin: 30px 0;
     font-family: Trebuchet MS;
 };
 `

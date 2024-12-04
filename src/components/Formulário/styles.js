@@ -13,6 +13,11 @@ export const Container = styled.div`
   width: 80%;
   max-width: 600px;
   font-family: "Trebuchet MS";
+
+  @media (max-width: 450px) {
+    width: 60%;
+    margin-left: 1.6rem;
+  }
 `;
 
 export const Title = styled.h2`
@@ -22,6 +27,10 @@ export const Title = styled.h2`
   font-weight: bold;
   color: #000047;
   text-align: center;
+
+  @media (max-width: 450px) {
+    margin: 2rem 1.6rem 1rem 1rem;
+  }
 `;
 
 export const Input = styled.input`
@@ -113,6 +122,6 @@ export const StyledButton = styled(PDFDownloadLink)`
 
 export const Form = styled.form`
   @media (max-width: 450px) {
-    margin-right: 35px;
+    
   }
 `;
