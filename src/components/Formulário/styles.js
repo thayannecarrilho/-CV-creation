@@ -110,3 +110,9 @@ export const StyledButton = styled(PDFDownloadLink)`
     background-color: #1a006b;
   }
 `;
+
+export const Form = styled.form`
+  @media (max-width: 450px) {
+    margin-right: 35px;
+  }
+`;
