@@ -34,7 +34,7 @@ const DadosPessoais = ({ dados, atualizarDados }) => {
           />
           <Input
             type="text"
-            placeholder="Cargo"
+            placeholder="Objetivo Profissional"
             value={dados.cargo}
             onChange={(e) => atualizarDados("cargo", e.target.value)}
           />
