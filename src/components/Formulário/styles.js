@@ -14,7 +14,7 @@ export const Container = styled.div`
   max-width: 600px;
   font-family: "Trebuchet MS";
 
-  @media (max-width: 450px) {
+  @media (max-width: 400px) {
     width: 60%;
     margin-left: 1.6rem;
   }
@@ -28,7 +28,7 @@ export const Title = styled.h2`
   color: #000047;
   text-align: center;
 
-  @media (max-width: 450px) {
+  @media (max-width: 400px) {
     margin: 2rem 1.6rem 1rem 1rem;
   }
 `;
