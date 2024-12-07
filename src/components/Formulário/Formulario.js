@@ -2,7 +2,6 @@ import React, { useState, useCallback } from "react";
 import DadosPessoais from "./DadosPessoais";
 import SecaoDinamica from "./SecaoDinamica";
 import CurriculoPDF from "../Pdf/CurriculoPDF";
-import {Form} from './styles'
 
 const Formulario = () => {
   const [dados, setDados] = useState({
@@ -47,8 +46,11 @@ const Formulario = () => {
     />
   );
 
+
+
+
   return (
-    <Form>
+    <form>
       <DadosPessoais dados={dados} atualizarDados={atualizarDados} />
       {renderizarSecaoDinamica("Informações Adicionais", "infos", {
         titulo: "Título",
@@ -107,7 +109,7 @@ const Formulario = () => {
         ))}
       </div>
       <CurriculoPDF dados={dados} />
-    </Form>
+    </form>
   );
 };
 

@@ -1,23 +1,19 @@
 import styled from "styled-components";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 2rem 3rem;
+  padding: 2rem;
   background-color: #317dbe; 
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  width: 80%;
+  width: 90%;
   max-width: 600px;
   font-family: "Trebuchet MS";
-
-  @media (max-width: 400px) {
-    width: 60%;
-    margin-left: 1.6rem;
-  }
 `;
 
 export const Title = styled.h2`
@@ -27,10 +23,6 @@ export const Title = styled.h2`
   font-weight: bold;
   color: #000047;
   text-align: center;
-
-  @media (max-width: 400px) {
-    margin: 2rem 1.6rem 1rem 1rem;
-  }
 `;
 
 export const Input = styled.input`
@@ -93,7 +85,7 @@ export const SubContainer = styled.div`
   align-items: center;
   width: 100%;
   position: relative;
-  padding: 1.5rem 2rem;
+  padding: 1rem;
   margin-bottom: 2rem;
   background-color: #f7f7f7;
   border-radius: 8px;
@@ -120,8 +112,4 @@ export const StyledButton = styled(PDFDownloadLink)`
   }
 `;
 
-export const Form = styled.form`
-  @media (max-width: 450px) {
-    
-  }
-`;
+
