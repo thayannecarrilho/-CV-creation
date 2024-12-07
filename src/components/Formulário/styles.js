@@ -23,6 +23,9 @@ export const Title = styled.h2`
   font-weight: bold;
   color: #000047;
   text-align: center;
+
+  @media (max-width: 600px) {
+    font-size: 1rem;
 `;
 
 export const Input = styled.input`
