@@ -2,11 +2,14 @@ import React from "react";
 import { Document, Page, Text, View, StyleSheet, Image } from "@react-pdf/renderer";
 import { StyledButton } from "../Formulário/styles";
 
+
 // Ícones PNG
 import phoneIcon from "../../assets/telefone.png";
 import emailIcon from "../../assets/o-email.png";
 import locationIcon from "../../assets/mapas-e-bandeiras.png";
 import ageIcon from "../../assets/calendario.png";
+
+
 
 const CurriculoPDF = ({ dados }) => {
   const DocumentoPDF = () => (
@@ -218,7 +221,7 @@ const styles = (palette) =>
     page: {
       display: "flex",
       flexDirection: "row",
-      fontFamily: "Helvetica",
+      fontFamily:  "Times-Roman",
       fontSize: 12,
     },
     leftSection: {
@@ -241,15 +244,17 @@ const styles = (palette) =>
       alignSelf: "center",
     },
     title: {
+      fontFamily:  "Times-Roman",
       fontSize: 20,
       color: `${palette[2]}`,
       textTransform: "uppercase",
-      fontWeight: "900",
+      fontWeight: "bold",
       textAlign: "center",
       marginBottom: 10,
     },
     subtitle: {
       borderBottom: `3px solid ${palette[2]}`,
+      fontFamily:  "Times-Roman",
       paddingBottom: 5,
       fontSize: 12,
       color: palette[2],
@@ -259,12 +264,14 @@ const styles = (palette) =>
       marginTop: 10,
     },
     objetivo: {
+      fontFamily:  "Times-Roman",
       textAlign: "center",
       fontSize: 12,
-      fontWeight: 900,
+      fontWeight: 'bold',
       marginBottom: 20,
     },
     textTitle: {
+      fontFamily:  "Times-Roman",
       textTransform: 'uppercase',
       fontSize: 10,
       fontWeight: "bold",
@@ -272,6 +279,7 @@ const styles = (palette) =>
       display: "block",
     },
     textEnter: {
+      fontFamily:  "Times-Roman",
       fontSize: 10,
       textAlign: "justify",
       wordBreak: "normal",
@@ -280,6 +288,7 @@ const styles = (palette) =>
       marginBottom: 5,
     },
     text: {
+      fontFamily:  "Times-Roman",
       fontSize: 10,
       textAlign: 'justify',
       wordBreak: 'normal',
@@ -287,6 +296,7 @@ const styles = (palette) =>
       
     },
     linkText: {
+      fontFamily:  "Times-Roman",
       display: "block",
       cursor: "pointer",
       fontSize: 10,
